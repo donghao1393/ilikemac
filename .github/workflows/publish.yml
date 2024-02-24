@@ -1,3 +1,4 @@
+# https://github.com/marketplace/actions/zola-deploy-to-pages#usage
 name: Zola on GitHub Pages
 
 on: 
