@@ -23,6 +23,7 @@ toc = true
 use_cdn = false
 favicon = "/icon/favicon.png"
 theme = "auto" # light, dark, auto, toggle
+comment = true
 
 mathjax = true
 mathjax_dollar_inline_enable = true
