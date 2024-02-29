@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://ilikemac.com/</loc>
+    </url>
+    <url>
+        <loc>https://ilikemac.com/about/</loc>
+    </url>
+    <url>
+        <loc>https://ilikemac.com/posts/</loc>
+    </url>
+    <url>
+        <loc>https://ilikemac.com/posts/disable-special-characters/</loc>
+        <lastmod>2024-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://ilikemac.com/posts/open-3rd-party-app/</loc>
+        <lastmod>2024-02-24</lastmod>
+    </url>
+    <url>
+        <loc>https://ilikemac.com/posts/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://ilikemac.com/posts/sync-between-two-macs/</loc>
+        <lastmod>2024-02-24</lastmod>
+    </url>
+</urlset>
