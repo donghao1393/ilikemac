@@ -44,12 +44,12 @@ stylesheets = [
     "something_else.css"
 ]
 
-#[extra.analytics]
-#enabled = false
-#
-#[extra.analytics.goatcounter]
-#user = "your_user"
-#host = "example.com"    # default= goatcounter.com
+[extra.analytics]
+enabled = true
+
+[extra.analytics.goatcounter]
+user = "ilikemac"
+host = "goatcounter.com"    # default= goatcounter.com
 #
 #[extra.analytics.umami]
 #website_id = "43929cd1-1e83...."
