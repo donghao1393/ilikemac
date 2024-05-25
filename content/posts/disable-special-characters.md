@@ -13,12 +13,12 @@ date = "2024-02-17"
 ### 英文输入法
 打开系统设置，进入键盘，编辑输入法。去掉自带的ABC英文输入法，在添加输入法中找到Unicode Hex Input，并添加。
 
-![](https://ilikemac.obs.ap-southeast-1.myhuaweicloud.com/Screenshot_2024-02-17_at_11.16.58.png)
+![](https://img.ilikemac.com/Screenshot_2024-02-17_at_11.16.58.png)
 
 ### 中文输入法
 这里主要讲搜狗拼音输入法的禁用方法，打开偏好设置，选择按键->键盘布局，找到并修改为Unicode十六进制输入。
 
-![](https://ilikemac.obs.ap-southeast-1.myhuaweicloud.com/Screenshot_2024-02-17_at_11.35.41.png)
+![](https://img.ilikemac.com/Screenshot_2024-02-17_at_11.35.41.png)
 
 ## 总结
 通过切换键盘布局，我们就可以不让特殊字符在使用快捷键的时候自动弹出了。

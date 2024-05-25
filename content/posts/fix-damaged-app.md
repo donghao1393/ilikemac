@@ -6,7 +6,7 @@ date = "2024-04-03"
 ## 背景
 MacOS会对应用进行认证检查，如果有问题的应用，默认是打不开的，如下图。
 
-![](https://ilikemac.obs.ap-southeast-1.myhuaweicloud.com/Screenshot_2024-03-16_at_21.22.44.png)
+![](https://img.ilikemac.com/Screenshot_2024-03-16_at_21.22.44.png)
 
 怎么办？我们给他放行就是。
 

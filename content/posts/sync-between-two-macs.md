@@ -13,16 +13,16 @@ date = "2024-02-24"
 ### 传输方开启共享
 打开系统设置，进入文件共享，打开文件共享，输入系统密码，然后确认开启。
 
-![](https://ilikemac.obs.ap-southeast-1.myhuaweicloud.com/Screenshot_2024-02-24_at_16.30.15.png)
+![](https://img.ilikemac.com/Screenshot_2024-02-24_at_16.30.15.png)
 
 ### 接收方连接上传输方
 在传输方刚才开启共享的界面，点击右边小i字母带圆圈的图标，找到机器名称，复制。
 
-![](https://ilikemac.obs.ap-southeast-1.myhuaweicloud.com/Screenshot_2024-02-24_at_23.00.39.png)
+![](https://img.ilikemac.com/Screenshot_2024-02-24_at_23.00.39.png)
 
 在接收方，进入Finder，同时按下Cmd+K的快捷键，粘贴传输方电脑的名称，回车确认
 
-![](https://ilikemac.obs.ap-southeast-1.myhuaweicloud.com/Screenshot_2024-02-24_at_23.02.04.png)
+![](https://img.ilikemac.com/Screenshot_2024-02-24_at_23.02.04.png)
 
 ### 复制文件
 输入传输方Mac的账号密码，或者匿名连接成功后，在打开的窗口中，就像在本地电脑之间复制文件夹一样，就可以复制文件了。
