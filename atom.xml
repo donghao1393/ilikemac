@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>I like Mac</title>
+    <link rel="self" type="application/atom+xml" href="https://ilikemac.com/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://ilikemac.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-04-05T00:00:00+00:00</updated>
+    <id>https://ilikemac.com/atom.xml</id>
+    <entry xml:lang="en">
+        <title>移除默认输入法</title>
+        <published>2024-04-05T00:00:00+00:00</published>
+        <updated>2024-04-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ilikemac.com/posts/remove-abc-input/"/>
+        <id>https://ilikemac.com/posts/remove-abc-input/</id>
+        
+        <content type="html" xml:base="https://ilikemac.com/posts/remove-abc-input/">&lt;h2 id=&quot;bei-jing&quot;&gt;背景&lt;&#x2F;h2&gt;
+&lt;p&gt;在MacOS中，会有一个输入法默认无法删除，例如ABC，这里删除按钮是灰色的。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-04-05_at_18.23.47.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;要删除这个默认输入法，就需要编辑二进制的Plist文件，可以在&lt;a href=&quot;https:&#x2F;&#x2F;www.fatcatsoftware.com&#x2F;plisteditpro&#x2F;&quot;&gt;这里&lt;&#x2F;a&gt;下载免费的Plist Editor软件。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bu-zou&quot;&gt;步骤&lt;&#x2F;h2&gt;
+&lt;p&gt;主要分为两步，一是删除默认输入法，二是重启系统。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;shan-chu-mo-ren-shu-ru-fa&quot;&gt;删除默认输入法&lt;&#x2F;h3&gt;
+&lt;p&gt;打开Terminal，输入以下命令，打开文件编辑。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; open &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;Library&#x2F;Preferences&#x2F;com.apple.HIToolbox.plist&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -a&lt;&#x2F;span&gt;&lt;span&gt; PlistEdit&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\ &lt;&#x2F;span&gt;&lt;span&gt;Pro
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;找到&lt;code&gt;AppleEnabledInputSources&lt;&#x2F;code&gt;节点，展开，在子项中找到&lt;code&gt;KeyboardLayout Name&lt;&#x2F;code&gt;值为你要删除的输入法名称的项，例如我这里是&lt;code&gt;ABC&lt;&#x2F;code&gt;，然后点击菜单上的Delete删掉，再按Cmd+S保存即可。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-04-05_at_18.24.29.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;zhong-qi-xi-tong&quot;&gt;重启系统&lt;&#x2F;h3&gt;
+&lt;p&gt;重启后，可以看到默认无法删除的ABC输入法已经被我们移出了。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-04-05_at_18.35.24.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zong-jie&quot;&gt;总结&lt;&#x2F;h2&gt;
+&lt;p&gt;通过编辑系统配置文件，我们就可以移出不让删除的默认输入法了。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>修复损坏的应用</title>
+        <published>2024-04-03T00:00:00+00:00</published>
+        <updated>2024-04-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ilikemac.com/posts/fix-damaged-app/"/>
+        <id>https://ilikemac.com/posts/fix-damaged-app/</id>
+        
+        <content type="html" xml:base="https://ilikemac.com/posts/fix-damaged-app/">&lt;h2 id=&quot;bei-jing&quot;&gt;背景&lt;&#x2F;h2&gt;
+&lt;p&gt;MacOS会对应用进行认证检查，如果有问题的应用，默认是打不开的，如下图。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-03-16_at_21.22.44.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;怎么办？我们给他放行就是。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bu-zou&quot;&gt;步骤&lt;&#x2F;h2&gt;
+&lt;p&gt;主要分为两步，一是禁用GateKeeper，二是修复应用权限。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;jin-yong-gatekeeper&quot;&gt;禁用GateKeeper&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; spctl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --master-disable
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;xiu-fu-ying-yong-quan-xian&quot;&gt;修复应用权限&lt;&#x2F;h3&gt;
+&lt;p&gt;把如下PicGo.app换成你的应用名称。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;xattr -cr&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;Applications&#x2F;PicGo.app
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;zong-jie&quot;&gt;总结&lt;&#x2F;h2&gt;
+&lt;p&gt;通过修复应用权限，我们就可以正确打开应用了。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>打开第三方下载的应用</title>
+        <published>2024-02-24T00:00:00+00:00</published>
+        <updated>2024-02-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ilikemac.com/posts/open-3rd-party-app/"/>
+        <id>https://ilikemac.com/posts/open-3rd-party-app/</id>
+        
+        <content type="html" xml:base="https://ilikemac.com/posts/open-3rd-party-app/">&lt;h2 id=&quot;bei-jing&quot;&gt;背景&lt;&#x2F;h2&gt;
+&lt;p&gt;在MacOS中，默认只允许用户打开从App Store下载的，或其他可信发行者提供的应用。&lt;&#x2F;p&gt;
+&lt;p&gt;但是在实际使用中，我们常常会遇到一些第三方来源的软件，那要如何打开他们呢？&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bu-zou&quot;&gt;步骤&lt;&#x2F;h2&gt;
+&lt;p&gt;主要分为三步，一是确认系统设置，二是允许打开，三是打开使用。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;que-ren-xi-tong-she-zhi&quot;&gt;确认系统设置&lt;&#x2F;h3&gt;
+&lt;p&gt;打开系统设置，进入安全，确认勾选的是“App Store和认证的发行者”。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-02-24_at_23.49.23.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;yun-xu-da-kai&quot;&gt;允许打开&lt;&#x2F;h3&gt;
+&lt;p&gt;定位到目标文件夹，双击我们要打开的文件。这时候会弹出一个安全警告，点击取消。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-02-24_at_23.44.30.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;在这一步操作之后，再次进入系统设置，进入安全，点击“仍然打开”。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-02-24_at_23.44.59.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;da-kai-shi-yong&quot;&gt;打开使用&lt;&#x2F;h2&gt;
+&lt;p&gt;再次回到目标应用，双击打开。这次弹出的是不一样的安全警告，我们选择打开，即可使用。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-02-24_at_23.45.06.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>在两台Mac之间传输文件</title>
+        <published>2024-02-24T00:00:00+00:00</published>
+        <updated>2024-02-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ilikemac.com/posts/sync-between-two-macs/"/>
+        <id>https://ilikemac.com/posts/sync-between-two-macs/</id>
+        
+        <content type="html" xml:base="https://ilikemac.com/posts/sync-between-two-macs/">&lt;h2 id=&quot;bei-jing&quot;&gt;背景&lt;&#x2F;h2&gt;
+&lt;p&gt;以往我们要在两台设备中传输文件，要么用QQ，要么用微信。现在，在Mac中，我们可以使用系统自带的&lt;strong&gt;文件传输&lt;&#x2F;strong&gt;功能。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bu-zou&quot;&gt;步骤&lt;&#x2F;h2&gt;
+&lt;p&gt;主要分为三步，一是开启文件传输方的文件传输功能，二是接收方连接到对方的文件传输系统，三是复制文件，开始传输。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;chuan-shu-fang-kai-qi-gong-xiang&quot;&gt;传输方开启共享&lt;&#x2F;h3&gt;
+&lt;p&gt;打开系统设置，进入文件共享，打开文件共享，输入系统密码，然后确认开启。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-02-24_at_16.30.15.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;jie-shou-fang-lian-jie-shang-chuan-shu-fang&quot;&gt;接收方连接上传输方&lt;&#x2F;h3&gt;
+&lt;p&gt;在传输方刚才开启共享的界面，点击右边小i字母带圆圈的图标，找到机器名称，复制。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-02-24_at_23.00.39.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;在接收方，进入Finder，同时按下Cmd+K的快捷键，粘贴传输方电脑的名称，回车确认&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-02-24_at_23.02.04.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;fu-zhi-wen-jian&quot;&gt;复制文件&lt;&#x2F;h3&gt;
+&lt;p&gt;输入传输方Mac的账号密码，或者匿名连接成功后，在打开的窗口中，就像在本地电脑之间复制文件夹一样，就可以复制文件了。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zong-jie&quot;&gt;总结&lt;&#x2F;h2&gt;
+&lt;p&gt;通过Mac自带的文件传输功能，可以帮助我们在局域网中，快速地传输数据。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>禁用自动弹出特殊字符</title>
+        <published>2024-02-17T00:00:00+00:00</published>
+        <updated>2024-02-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ilikemac.com/posts/disable-special-characters/"/>
+        <id>https://ilikemac.com/posts/disable-special-characters/</id>
+        
+        <content type="html" xml:base="https://ilikemac.com/posts/disable-special-characters/">&lt;h2 id=&quot;bei-jing&quot;&gt;背景&lt;&#x2F;h2&gt;
+&lt;p&gt;在MacOS中，默认只要按住了Option，再按其他字母按键就会自动弹出一个特殊字符。这对我们大多数时候没多大用，反而会影响一些快捷键的使用体验。下面就来讲，如何禁用这一功能。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bu-zou&quot;&gt;步骤&lt;&#x2F;h2&gt;
+&lt;p&gt;主要分为两步，一是禁用英文输入法下的特殊字符，二是禁用中文输入法下的特殊字符。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ying-wen-shu-ru-fa&quot;&gt;英文输入法&lt;&#x2F;h3&gt;
+&lt;p&gt;打开系统设置，进入键盘，编辑输入法。去掉自带的ABC英文输入法，在添加输入法中找到Unicode Hex Input，并添加。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-02-17_at_11.16.58.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;zhong-wen-shu-ru-fa&quot;&gt;中文输入法&lt;&#x2F;h3&gt;
+&lt;p&gt;这里主要讲搜狗拼音输入法的禁用方法，打开偏好设置，选择按键-&amp;gt;键盘布局，找到并修改为Unicode十六进制输入。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.ilikemac.com&#x2F;Screenshot_2024-02-17_at_11.35.41.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zong-jie&quot;&gt;总结&lt;&#x2F;h2&gt;
+&lt;p&gt;通过切换键盘布局，我们就可以不让特殊字符在使用快捷键的时候自动弹出了。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
